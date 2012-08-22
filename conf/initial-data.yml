@@ -1,29 +1,23 @@
 # Test data
 
-User(bob):
-    email:          bob@gmail.com
-    password:       secret
-    fullname:       Bob
-    isAdmin:        true
-    
 User(timo):
     email:          timo.slack@gmail.com
     password:       secret
     fullname:       Timo
-    isAdmin:        false
+    isAdmin:        true
     
-User(jeff):
-    email:          jeff@gmail.com
+User(carla):
+    email:          carla@gmail.com
     password:       secret
-    fullname:       Jeff    
+    fullname:       Carla    
     
-User(paul):
-    email:          paul@gmail.com
+User(roger):
+    email:          roger@gmail.com
     password:       secret
-    fullname:       Paul    
+    fullname:       Roger    
     
-Tag(play):
-    name:           Play
+Tag(local):
+    name:           local
     
 Tag(architecture):
     name:           Architecture
@@ -34,15 +28,15 @@ Tag(test):
 Tag(mvc):
     name:           MVC    
     
-Post(firstBobPost):
+Post(firstTimoPost):
     title:          About the model layer
-    postedAt:       2009-06-14
-    author:         bob
+    postedAt:       2011-06-14
+    author:         timo
     tags:           
-                    - play
+                    - local
                     - architecture
     content:        >
-                    The model has a central position in a Play! application. It is the domain-specific 
+                    The model has a central position in any web application application. It is the domain-specific 
                     representation of the information on which the application operates.
                      
                     Martin fowler defines it as :
@@ -52,48 +46,44 @@ Post(firstBobPost):
                     is controlled and used here, even though the technical details of storing it are 
                     delegated to the infrastructure. This layer is the heart of business software.
 
-Post(secondBobPost):
-    title:          Just a test of YABE
-    postedAt:       2009-03-25
-    author:         bob
+Post(secondTimoPost):
+    title:          Just a test
+    postedAt:       2012-03-25
+    author:         timo
     tags:           
                     - test
     content:        >
                     Well, it's just a test.
                     
-Post(jeffPost):
-    title:          The MVC application
-    postedAt:       2009-06-06
-    author:         jeff
+Post(carlaPost):
+    title:          Al fondo hay sitio
+    postedAt:       2012-06-06
+    author:         carla
     tags:           
-                    - play
-                    - architecture
-                    - mvc
+                    - local
     content:        >
-                    A Play! application follows the MVC architectural pattern as applied to the 
-                    architecture of the Web.
+                    Esta es una novela epica que cuenta la historia de una familia peruana postmodernista.  
                      
-                    This pattern splits the application into separate layers: the Presentation 
-                    layer and the Model layer. The Presentation layer is further split into a 
-                    View and a Controller layer.
+                    Encuentra la catarsis de su historia en la constante batalla del rico contra el pobre, la sintesis de la sociedad actual.
+                	Me encanta la novela, y Betty la fea, y Pedro el escamoso tambien...
                     
 Comment(c1):
-    author:         Guest
+    author:         Roger
     content:        >
-                    You are right !
-    postedAt:       2009-06-14
-    post:           firstBobPost
+                    Yo soy Roger...
+    postedAt:       2012-06-14
+    post:           firstTimoPost
     
 Comment(c2):
-    author:         Mike
+    author:         Yenny
     content:        >
-                    I knew that ...
-    postedAt:       2009-06-15
-    post:           firstBobPost    
+                    Ya lo sabia ...
+    postedAt:       2012-06-15
+    post:           firstTimoPost    
     
 Comment(c3):
-    author:         Tom
+    author:         Marines
     content:        >
-                    This post is useless ?
-    postedAt:       2009-04-05
-    post:           secondBobPost    
+                    Es esto util ?
+    postedAt:       2012-04-05
+    post:           secondTimoPost    
